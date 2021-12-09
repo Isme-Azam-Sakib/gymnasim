@@ -7,6 +7,7 @@
     --twit:#1da1f2;
     --over6: rgba(0, 0, 0, 0.6);
     --over8: rgba(0, 0, 0, 0.8);
+    --over85: rgba(0, 0, 0, 0.85);
     --over9: rgba(0, 0, 0, 0.9);
     --overred: rgba(226, 62, 56, 0.5);
     --bg1:#dddddd;
@@ -639,4 +640,232 @@ img{
 
 /*====================================== 
             membership css ends
+======================================*/
+
+
+
+#numbers{
+    background: url(../images/number.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding: 40px 0 ;
+}
+
+#numbers::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over9);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+/*====================================== 
+            numbers css ends
+======================================*/
+#routine{
+    padding-top: 80px;
+}
+#routine .nav-tabs .nav-item.show .nav-link,
+#routine .nav-tabs .nav-item .nav-link:hover,
+#routine .nav-tabs .nav-link.active{
+    border-color: transparent !important;
+}
+#routine .nav-tabs .nav-item{
+    width: 16.66%;
+}
+#routine .nav-tabs .nav-item .nav-link{
+    background: var(--bg1);
+    line-height: 50px;
+    color: var(--cl1);
+}
+#routine .nav-tabs .nav-link.active{
+    background: var(--brand);
+    color: #fff;
+}
+#routine .main-routine ul{
+ padding: 30px 0 80px 0;
+}
+#routine .main-routine ul li{
+    padding: 50px 0;
+    width: 20%;
+    background: var(--bg2);
+    transform: scale(.99);
+    -webkit-transform: scale(.99);
+    -moz-transform: scale(.99);
+    -ms-transform: scale(.99);
+    -o-transform: scale(.99);
+}
+#routine .main-routine ul li.active{
+    background: var(--brand);
+    color: #fff;
+
+}
+/*====================================== 
+            routine css ends
+======================================*/
+
+#partner{
+    position: relative;
+    padding-bottom: 80px;
+}
+#partner .partner-item{
+    margin: 0 15px ;
+}
+#partner .slick-list{
+    padding: 5px !important;
+}
+#partner .partner-item.slick-center{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+#partner .prev-arrow{
+    color: var(--cl1);
+    cursor: pointer;
+    font-size: 28px;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 100;
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    -o-transition: all ease .4s;
+}
+#partner .prev-arrow:hover{
+    color: var(--brand);
+}
+#partner .next-arrow{
+    color: var(--cl1);
+    cursor: pointer;
+    font-size: 28px;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 100;
+    transition: all ease .4s;
+}
+#partner .next-arrow:hover{
+    color: var(--brand);
+}
+/*====================================== 
+            partner css ends
+======================================*/
+
+
+
+footer{
+    background: url(../images/footer.jpg) no-repeat center / cover ;
+    position: relative;
+    z-index: 1;
+}
+footer::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over85);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+footer .footer-logo{
+    padding: 30px 0;
+}
+footer .footer-content{
+    padding: 30px 0;
+    border-top: 1px  #f1f1f1 solid;
+    border-bottom: 1px  #f1f1f1 solid;
+}
+footer .footer-content .footer-items h5{
+    padding: 25px 0;
+}
+footer .footer-content .footer-items .opening-hours li{
+    margin-bottom: 5px !important;
+}
+footer .footer-content .footer-items .opening-hours li span{
+    display: inline-block;
+    width: 100px;
+}
+
+footer .footer-content .footer-items .twitter-feed li{
+    position: relative;
+    padding: 0 0 25px 25px;
+    line-height: 18px;
+}
+
+
+footer .footer-content .footer-items .twitter-feed li .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+footer .footer-content .footer-items .twitter-feed li .icon i{
+    color: var(--twit);
+}
+
+
+footer .footer-content .footer-items .footer-gallery li{
+    width: 25%;
+    padding: 5px;
+}
+
+
+footer .footer-content .footer-items .contact li {
+    position: relative;
+    padding: 0 0 15px 23px;
+    line-height: 18px;
+}
+footer .footer-content .footer-items .contact li .social-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+footer .footer-content .footer-items .contact li .social-icon i{
+    color: var(--brand);
+}
+footer .footer-content .footer-items .socials h5{
+    padding-top: 10px;
+}
+footer .footer-content .footer-items .socials .btn{
+    margin-right: 5px;
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    -o-transition: all ease .4s;
+}
+footer .footer-content .footer-items .socials .btn:hover{
+    border-color: var(--brand);
+    background-color: var(--brand);
+    color: #fff;
+}
+footer .footer-content .footer-items .socials .btn-outline-light:active{
+    color: #fff;
+    background: var(--brand);
+    border-color: transparent;
+}
+footer .footer-content .footer-items .socials a i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+footer .copyright .copyright-text a{
+    line-height: 50px;
+    color: var(--brand);
+}
+/*====================================== 
+            partner css ends
 ======================================*/
